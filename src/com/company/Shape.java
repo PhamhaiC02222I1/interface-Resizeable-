@@ -1,6 +1,6 @@
 package com.company;
-
-public  abstract class Shape {
+import resize.resizeable;
+public  class Shape implements resizeable{
     private String color = "black";
     private boolean filled = false;
 
@@ -34,5 +34,10 @@ public  abstract class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
+    }
+
+    @Override
+    public void resize(double percent) {
+
     }
 }
